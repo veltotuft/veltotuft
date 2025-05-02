@@ -10,8 +10,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Playfair Display', serif;
-      background: radial-gradient(circle at center, #1A1A40, #0F0F26);
-      color: #F9F5EF;
+      background: linear-gradient(135deg, #FAD6FF, #FFC9D6, #E9C3FF);
+      color: #4C1A3A;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -23,47 +23,44 @@
     }
 
     .logo {
-      width: 180px;
+      width: 160px;
       height: auto;
-      animation: pulse 3s ease-in-out infinite;
-      margin-bottom: 2rem;
+      animation: fadeIn 2s ease-in-out;
+      margin-bottom: 1.5rem;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.05); opacity: 0.95; }
-      100% { transform: scale(1); opacity: 1; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 4.5rem;
       font-weight: 700;
-      color: #D4AF7F;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-      margin: 0.3em 0 0.1em;
+      color: #C04A82;
+      margin: 0.2em 0;
+      text-shadow: 2px 2px #FFD6E7;
     }
 
     h2 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       font-weight: 700;
-      color: #A45A73;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      color: #A44B69;
       margin-bottom: 1em;
     }
 
     p {
-      font-size: 1.3rem;
-      color: #F9F5EF;
+      font-size: 1.6rem;
+      color: #5B2C6F;
       max-width: 700px;
       padding: 0 1rem;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 2.8rem; }
-      h2 { font-size: 1.8rem; }
-      p { font-size: 1.1rem; }
-      .logo { width: 140px; }
+      h1 { font-size: 3rem; }
+      h2 { font-size: 2rem; }
+      p { font-size: 1.2rem; }
+      .logo { width: 120px; }
     }
   </style>
 </head>
@@ -72,6 +69,6 @@
 
   <h1>Velto.tuft</h1>
   <h2>Coming Soon</h2>
-  <p>Tuft is coming to cut through the ordinary — with bold textures, rich color, and velvet emotion.</p>
+  <p>Tuft is coming to cut through the ordinary — with color, richness, and bold textures that speak.</p>
 </body>
 </html>
