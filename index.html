@@ -10,8 +10,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Playfair Display', serif;
-      background: linear-gradient(135deg, #F5D9FF, #FFE156);
-      color: #320036;
+      background: radial-gradient(circle at center, #2D2D2D, #3B0A45);
+      color: #D0A9F5;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -23,45 +23,47 @@
     }
 
     .logo {
-      width: 170px;
+      width: 180px;
       height: auto;
-      animation: popIn 1.5s ease-out forwards;
-      margin-bottom: 1.5rem;
-      opacity: 0;
+      animation: pulse 3s ease-in-out infinite;
+      margin-bottom: 2rem;
     }
 
-    @keyframes popIn {
-      0% { transform: scale(0.8); opacity: 0; }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
       100% { transform: scale(1); opacity: 1; }
     }
 
     h1 {
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-weight: 700;
-      color: #FF2E9A;
-      text-shadow: 2px 2px #FFE156;
-      margin: 0.2em 0;
+      color: #9C5D4F;
+      text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+      margin: 0.3em 0 0.1em;
     }
 
     h2 {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       font-weight: 700;
-      color: #8E2EFF;
+      color: #D0A9F5;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
       margin-bottom: 1em;
     }
 
     p {
-      font-size: 1.6rem;
-      color: #320036;
+      font-size: 1.3rem;
+      color: #D0A9F5;
       max-width: 700px;
       padding: 0 1rem;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 3rem; }
-      h2 { font-size: 2rem; }
-      p { font-size: 1.2rem; }
-      .logo { width: 120px; }
+      h1 { font-size: 2.8rem; }
+      h2 { font-size: 1.8rem; }
+      p { font-size: 1.1rem; }
+      .logo { width: 140px; }
     }
   </style>
 </head>
@@ -70,6 +72,6 @@
 
   <h1>Velto.tuft</h1>
   <h2>Coming Soon</h2>
-  <p>Tuft is coming to cut through the ordinary — bold, bright, and unapologetically plush.</p>
+  <p>Tuft is coming to cut through the ordinary — with bold textures, rich color, and velvet emotion.</p>
 </body>
 </html>
