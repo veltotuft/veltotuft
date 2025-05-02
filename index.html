@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Playfair Display', serif;
-      background: radial-gradient(circle at center, #3B0A4D 0%, #2A003F 40%, #1C002B 100%);
+      background: radial-gradient(circle at center, #3B0A4D, #1C002B);
       color: #F8EAFB;
       display: flex;
       flex-direction: column;
@@ -19,18 +19,32 @@
       height: 100vh;
       text-align: center;
       overflow: hidden;
+      padding: 2rem;
+    }
+
+    .logo {
+      width: 180px;
+      height: auto;
+      animation: pulse 3s ease-in-out infinite;
+      margin-bottom: 2rem;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.95; }
+      100% { transform: scale(1); opacity: 1; }
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 700;
       color: #D9A7F0;
-      text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5), 0 0 10px #B96AC9;
-      margin: 0.2em 0;
+      text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+      margin: 0.3em 0 0.1em;
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.2rem;
       font-weight: 700;
       color: #F67280;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
@@ -38,17 +52,38 @@
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       color: #EED3F5;
       max-width: 700px;
       padding: 0 1rem;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .logo {
+        width: 140px;
+      }
     }
   </style>
 </head>
 <body>
+  <img class="logo" src="https://media-hosting.imagekit.io/db735ccce6d14732/Untitled%20design.png?Expires=1840798322&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=txKKwKL~NRb9Af9JDLHGmjJLHiYyNsqaVQm~H5zoxaSx8aGBbFKVgVzKt~1wYj8YIX1hq38QDZlxFu17hI4p9tx9lSrw~jb7cDMZpTbXDGnsclHPKapcSqFJX~G~NvPjVNLGtwLTJ6Eqr4foodif257AzNU59ieL9ZVlng2mcX~zr2VEpEimmFTFEmld~5ejmDJQ-DO7Ng3HJAtuyuLY6-ntw21P4H36528Ft6CKm0ymyCO-Csr9eorlSQ0SDrLpUO4rDI7VV4eODrJdSl08a8NngceyMyp~hiLn7A6vyUCLX-0bQf9XihldEBy2~1WyWWjWNXzeEJWxoxbRVPf~PQ__" alt="Velto Logo" />
+
   <h1>Velto.tuft</h1>
   <h2>Coming Soon</h2>
-  <p>Tuft is coming to cut through the ordinary — wrapped in velvet depth, softness, and statement.</p>
+  <p>Tuft is coming to cut through the ordinary — wrapped in velvet depth, softness, and bold presence.</p>
 </body>
 </html>
