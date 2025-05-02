@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Playfair Display', serif;
-      background: radial-gradient(circle at center, #D1E8B4, #892044); /* Reversed colors */
+      background: radial-gradient(circle at center, #892044, #2C0B2B); /* Changed to #892044 */
       color: #F8EAFB;
       display: flex;
       flex-direction: column;
@@ -25,37 +25,14 @@
     .logo {
       width: 180px;
       height: auto;
-      animation: pulse 3s ease-in-out infinite, slideUp 2s ease-in-out forwards;
+      animation: pulse 3s ease-in-out infinite;
       margin-bottom: 2rem;
     }
 
-    /* Pulse animation for logo */
     @keyframes pulse {
       0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 0.95; }
       100% { transform: scale(1); opacity: 1; }
-    }
-
-    /* Slide up animation for logo */
-    @keyframes slideUp {
-      0% { transform: translateY(50px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    h1, h2, p {
-      animation: fadeIn 2s ease-in-out forwards, moveUp 2s ease-in-out forwards;
-    }
-
-    /* Fade-in animation for text */
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    /* Move-up animation for text */
-    @keyframes moveUp {
-      0% { transform: translateY(30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
     }
 
     h1 {
